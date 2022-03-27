@@ -94,4 +94,17 @@ a{
 .mainc{
   display: inline-flex;
   margin: auto;
+  width: 1000px;
+  height: 500px;
+  border: 1px red solid;
 }
+.img{
+    display: inline-flex;
+    margin: auto;
+    border: 1px red solid;
+}
+.item-1{
+  width: 100px;
+  height: 200px;
+}
+
