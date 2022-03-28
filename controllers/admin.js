@@ -3,6 +3,8 @@ const async = require('hbs/lib/async')
 const router = express.Router()
 const {insertObject,checkUserRole,USERS_TABLE_NAME} = require('../databaseHandler')
 
+
+
 //neu request la: /admin/register
 router.get('/register',(req,res)=>{
     res.render('register')
@@ -30,9 +32,11 @@ router.post('/login',async(req,res)=>{
     }
 })
 
+
 router.get('/login',(req,res)=>{
     res.render('login')
 })
+
 
 router.post('/register',(req,res)=>{
     const name = req.body.txtName
@@ -46,7 +50,7 @@ router.post('/register',(req,res)=>{
     }
 
     insertObject(USERS_TABLE_NAME,objectToInsert)
-    res.render('home')
+    res.render('Login')
 })
 
 module.exports = router;
