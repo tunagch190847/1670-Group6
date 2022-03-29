@@ -50,7 +50,7 @@ router.post('/register',(req,res)=>{
     }
 
     insertObject(USERS_TABLE_NAME,objectToInsert)
-    res.render('Login')
+    res.render('Login.')
 })
 
 module.exports = router;
